@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PickUpGreen : MonoBehaviour
+{
+    public static int scoreTrigger = 0;
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+           scoreTrigger +=1;
+           
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey("r")) { scoreTrigger=0; }
+    
+    }
+}
