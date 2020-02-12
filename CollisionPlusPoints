@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TouchVerge : MonoBehaviour
+public class CollisionPlusPoints : MonoBehaviour
 {
     public  static int scoreCollision = 0;
 
