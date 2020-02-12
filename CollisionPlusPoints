@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TouchVerge : MonoBehaviour
+{
+    public  static int scoreCollision = 0;
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Player" )
+        {
+           scoreCollision +=1;
+        }
+   }
+    private void Update()
+    {
+        if (Input.GetKey("r")) { scoreCollision=0; }
+    }
+}
