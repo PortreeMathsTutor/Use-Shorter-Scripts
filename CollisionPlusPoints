@@ -5,12 +5,12 @@ using UnityEngine;
 public class CollisionPlusPoints : MonoBehaviour
 {
     public  static int scoreCollision = 0;
-
+    public int numOfPoints =1;
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "Player" )
         {
-           scoreCollision +=1;
+           scoreCollision +=numOfPoints;
         }
    }
     private void Update()
