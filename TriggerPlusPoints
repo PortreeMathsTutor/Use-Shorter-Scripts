@@ -11,7 +11,7 @@ public class TriggerPlusPoints : MonoBehaviour
         if (other.tag == "Player")
         {
            scoreTrigger +=numOfPoints;
-           
+             Destroy(other.gameObject);
         }
     }
 
