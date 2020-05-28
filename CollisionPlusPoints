@@ -11,6 +11,7 @@ public class CollisionPlusPoints : MonoBehaviour
         if (col.gameObject.tag == "Player" )
         {
            scoreCollision +=numOfPoints;
+              Destroy(col.gameObject);
         }
    }
     private void Update()
