@@ -6,7 +6,7 @@ public class TriggerPlusPoints : MonoBehaviour
 {
     public static int scoreTrigger = 0;
     public int numOfPonts = 1;
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
